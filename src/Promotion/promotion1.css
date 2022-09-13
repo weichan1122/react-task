@@ -1,0 +1,46 @@
+.promo-bg {
+    background-image: url(https://macal8.com/assets/img/bg-home.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+  
+  }
+/* Promotion Tab Css */
+.promo_tab{
+    background: #fff;
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.promo_tab li.nav-item{
+    width: 8rem;
+}
+
+.promo_tab li.nav-item .nav-link.active{
+    background-color: rgba(var(--bs-primary-rgb))!important;
+    color:#fff;
+}
+
+/* Promotion Wrap Container Css */
+
+.promotion_container{
+    text-align: center;
+}
+
+
+@media (min-width: 768px){
+   .promotion_container .col-md-4 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px){
+    .promotion_container .col-md-4 {
+         flex: 0 0 auto;
+         width: 33.3333%;
+     }
+ }
