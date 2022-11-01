@@ -308,13 +308,40 @@ const AfterLogin = () => {
         <div className="header_balance_icon">
           <FaRedo />
           <FaEye />
-          <SiAddthis />
+          <div className="btn_gamewallet">
+            <SiAddthis />
+            <ul className="game_wallet_dropdown">
+              <li className="color_button main_wallet">
+                <div>Main Wallet</div>
+                <div>
+                  <div>0.00</div> 
+                  <div><FaRedo /></div>
+                </div>
+              </li>
+              <li> 
+                <div>918 Kiss</div>
+                <div>0.00</div>
+              </li>
+              <li> 
+                <div>Asia Gaming</div>
+                <div>0.00</div>
+              </li>
+              <li> 
+                <div>Pussy 888</div>
+                <div>0.00</div>
+              </li>
+              <li> 
+                <div>Mega888</div>
+                <div>0.00</div>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="header_bankinginfo_actionbtn">
           <Button className="font_h6 btn_restore ">
             {t("restore")}
           </Button>
-          <Button className="font_h6 btn_gamewallet ">
+          <Button className="font_h6 btn_promoclaim ">
             {t("Promo claim")}
           </Button>
         </div>
@@ -475,25 +502,46 @@ function Header() {
         <div className="d-lg-none">
           <div className="header_banking_info">
             <div className="header_banking_info_left">
+             
               <div className="header_balance">
                 <div className="header_balance_currency">myr</div>
-                <div className="font_h2 header_balance_amount">888,888,000</div>
-              </div>
-              <div className="font_h3 header_balance_icon">
+                <div className="font_h2 header_balance_amount">
+                  888,888,000
+                  <div className="font_h3 header_balance_icon">
                 <FaRedo />
                 <FaEye />
+                <SiAddthis />
               </div>
-            </div>
-            <div className="header_bankinginfo_actionbtn">
+                  </div>
+               
+              </div>
+           
+             
+              <div className="header_bankinginfo_actionbtn">
               <Button className="font_h6 btn_restore color_primary" variant="">
                 {/* <img src="https://macal8.com/m/assets/img/wallet/wallet(1).png" alt="restore" /> */}
                 Restore
               </Button>
-              <Button className="font_h6 btn_gamewallet color_primary" variant="">
+              <Button className="font_h6 btn_promoclaim color_primary" variant="">
                 {/* <img src="https://macal8.com/m/assets/img/wallet/wallet(2).png" alt="game wallet" /> */}
                 Promo Claim
               </Button>
             </div>
+            </div>
+            <div className="header_banking_info_right">
+              <div className="header_banking_menu_list">
+              <div className="vl" />
+          <Link to="../deposit" >{t("deposit")}</Link>
+          <div className="vl" />
+          <Link to="../transfer" >{t("transfer")}</Link>
+          <div className="vl" />
+          <Link to="../withdraw" >{t("withdraw")}</Link>
+          <div className="vl" />
+          <Link to="../history" >{t("history")}</Link>
+          <div className="vl" />
+              </div>
+            </div>
+       
           </div>
         </div>
         <ContactUsDesktop />

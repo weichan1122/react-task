@@ -320,12 +320,17 @@
 
 .header_banking_info .header_banking_info_left{
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
+  flex-direction: column;
 }
+
 .header_banking_info .header_balance{
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+}
+.header_banking_info_left .header_balance .header_balance_amount{
+  display: flex;
 }
 
 .header_banking_info .header_balance_currency{
@@ -334,7 +339,9 @@
 }
 
 .header_banking_info .header_balance_icon {
-  padding-bottom:.35rem
+  padding-bottom:.35rem;
+  display:flex;
+  align-items: center;
 }
 
 
@@ -347,11 +354,11 @@
 }
 
 .header_banking_info .header_bankinginfo_actionbtn button:first-of-type{
-  margin-left: .5rem;
+  margin-left: 0rem;
 }
 
 .header_banking_info .btn_restore,
-.header_banking_info .btn_gamewallet{
+.header_banking_info .btn_promoclaim{
   /* display: flex;
   flex-direction: column;
   align-items: center;
@@ -363,7 +370,7 @@
   display: unset;
   flex-direction: unset;
   align-items: unset;
-  width: 5rem;
+  width: 50%;
   padding: 0.35rem 0;
   margin-left: 0.25rem;
   border-radius: 0.25rem;
@@ -371,12 +378,12 @@
 }
 
 .header_banking_info .btn_restore img,
-.header_banking_info .btn_gamewallet img{
+.header_banking_info .btn_promoclaim img{
   width: 3.5rem;
 }
 /* -------  Mobile End ------- */
 
-/* -------  Desktop End ------- */
+/* -------  Desktop Top ------- */
 .header_topbar_wrap .header_banking_info{
   display:flex;
   justify-content: flex-end;
@@ -400,7 +407,7 @@
 }
 
 .header_topbar_wrap .header_banking_info .btn_restore,
-.header_topbar_wrap .header_banking_info .btn_gamewallet{
+.header_topbar_wrap .header_banking_info .btn_promoclaim{
   display: unset;
   flex-direction: unset;
   align-items: unset;
@@ -453,6 +460,72 @@
   right: -0.5rem;
   top: -0.5rem;
 }
+
+.header_balance_icon .btn_gamewallet{
+position: relative;
+}
+
+.header_balance_icon .btn_gamewallet .game_wallet_dropdown{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  color:#000;
+  list-style: none;
+  padding: 0.5rem 1rem;
+  z-index: 5;
+  transform: translate(-50%,0);
+  left: 50%;
+  width: 15rem;
+  font-size: .8rem;
+  margin-top:.5rem;
+ 
+}
+.btn_gamewallet .game_wallet_dropdown:after {
+  content: " ";
+  position: absolute;
+  left: 52%;
+  top: -7px;
+  border-top: none;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 8px solid #f1f1f1;
+  transform: translate(-50%, 0);
+}
+.game_wallet_dropdown li{
+  margin: 0.3rem 0;
+  display: flex;
+  align-items: center;
+  padding:0.5rem .8rem;
+  border-radius: .5rem;
+  justify-content: space-between;
+  
+}
+
+.game_wallet_dropdown li:not(.main_wallet){
+background-color: #fff;
+color:#808080;
+
+}
+
+.game_wallet_dropdown li.main_wallet{
+  justify-content: space-between;
+  margin-bottom: .5rem;
+  font-size: .9rem;
+}
+.game_wallet_dropdown li.main_wallet div:nth-child(2){
+  display: flex;
+  align-items: center;
+}
+
+.game_wallet_dropdown li:not(.main_wallet) div:nth-child(2) {
+ margin-right: 1.5rem;
+}
+
+.header_balance_icon .btn_gamewallet:hover .game_wallet_dropdown{
+  display: block;
+}
+
+
 /* -------  Desktop End ------- */
 
 /* ------ Header Banking Info End ------- */
