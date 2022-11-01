@@ -1,0 +1,10 @@
+.layout_template3 .main_pic img{
+    vertical-align: middle;
+    height: 100%
+}
+
+.layout_template3 img{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+}

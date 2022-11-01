@@ -1,0 +1,541 @@
+/* ------------------- Header Start --------------------- */
+
+.vl {
+  border-left: 1px dashed #fff;
+  margin: 0 0.5rem;
+  height: 1.2rem;
+}
+
+/* ------ Header Topbar (row1) Start ------- */
+
+.header_topbar {
+  padding: 0.5rem 0;
+}
+
+.header_topbar_wrap{
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-grow: 1;
+  /* flex-direction: column */
+}
+
+/* --- header logo start --- */
+.header_logo{
+  padding:0;
+}
+
+.header_logo img{
+  width: 18rem;
+}
+/* --- header logo end --- */
+
+/* --- header form start --- */
+
+
+.header_topbar_btn{
+  display: flex;
+  align-items: center;
+}
+
+.header_topbar_btn button:first-of-type{
+  margin-right:0.5rem;
+}
+
+.header_topbar_btn .header_noti,
+.header_topbar_btn .header_user {
+  position: relative;
+  margin-right: 1.5rem;
+}
+
+.header_topbar_btn .header_noti img {
+  width: 2.5rem;
+}
+
+.header_topbar_btn .header_user img {
+  width: 2rem;
+}
+
+.header_topbar_btn .header_noti svg {
+  position: absolute;
+  color: red;
+  right: -0.5rem;
+  top: -0.5rem;
+}
+
+.header_topbar_btn .header_user svg {
+  position: absolute;
+  color: red;
+  right: -0.5rem;
+  top: -0.7rem;
+}
+
+.header_form button:first-of-type{
+  margin-right:0.25rem;
+}
+
+.header_form_wrap{
+  display: flex;
+  align-items: center;
+}
+
+.header_form_wrap .header_form {
+  display: flex;
+}
+
+.forgot_content {
+  margin-right: 0.5rem;
+}
+
+.forgot_content .forgot_content_username,
+.forgot_content .forgot_content_password{
+  color: red;
+  cursor: pointer;
+}
+
+.header_form .input_username,
+.header_form .input_password{
+  margin-right:0.25rem;
+  width: 9rem;
+}
+
+.btn_login,
+.btn_register,
+.btn_logout {
+  text-transform: uppercase;
+  
+  width: 6rem;
+  font-weight: 600;
+  white-space: nowrap;
+
+}
+.btn_register,
+.btn_register:hover,
+.btn_logout,
+.btn_logout:hover{
+  margin: 0;
+  background-color: red;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+/* --- header form end --- */
+
+/* ------------------ Header Menu Start ------------------- */
+
+.header_menu_page .header_menu_content{
+  display: flex;
+  align-items: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.header_menu_page .header_text {
+  white-space: nowrap;
+  margin-left: 0.35rem;
+  font-weight: 500;
+}
+
+/* ------ Header Menu (Sidebar mobile) Start ------- */
+
+.header_topbar_toolbar .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+#header_menu_expand_lg.offcanvas.offcanvas-end {
+  right: unset;
+  left: 0;
+  transform: translateX(-100%);
+  width: 15rem;
+}
+
+.header_sidebar{
+  background-color: #11132a;
+}
+
+#header_menu_expand_lg.offcanvas.show:not(.hiding), 
+#header_menu_expand_lg.offcanvas.showing {
+  transform: none;
+}
+
+.header_sidebar_topbar .btn-close{
+  color:#fff;
+  filter: brightness(0)invert(1);
+}
+
+.header_sidebar_logo{
+  margin-top:1rem;
+  margin-left:1rem;
+  margin-right:1rem;
+  margin-bottom: 0;
+}
+
+.header_sidebar_menu{
+  display: flex;
+  flex-direction: column;
+}
+
+.header_sidebar_menu .header_menu_page {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.header_sidebar_menu .header_menu_icon {
+  width: 2.5rem;
+  margin: -0.25rem 1rem 0 0;
+}
+
+/* ------ Header Menu (Sidebar mobile) End ------- */
+
+/* ------ Header Menu (desktop) Start ------- */
+
+.header_menu {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  border-bottom: 1px solid #fff;
+  padding-right: 1.5rem;
+}
+
+.header_menu_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_menu_left{
+  display:flex;
+  align-items: center;
+}
+
+.header_menu_left .header_time{
+  margin-right: .25rem;
+}
+
+.header_menu_left .language_header {
+  display: flex;
+  align-items: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  position: relative;
+}
+
+.header_menu_left .language_header img{
+  width: 1.75rem;
+}
+
+.header_menu_left .language_header .header_current_language{
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.header_menu_left .language_header .language_dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  z-index: 2;
+  width: 100%;
+}
+
+.header_menu_left .language_header:hover .language_dropdown {
+  display: block;
+}
+
+.header_menu_left .language_header .language_dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.header_menu_left .language_header .language_dropdown ul li {
+  padding: 0.5rem;
+  background-color: #333;
+  cursor: pointer;
+}
+
+.header_menu_left .language_header .language_dropdown ul li:hover {
+  background-color: rgb(35, 32, 32);
+  color: #fff;
+}
+
+.header_menu_right{
+  display: flex;
+}
+
+.header_menu_right .header_menu_page{
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  margin:0;
+}
+
+.header_menu_right .header_menu_icon {
+  width: 1.8rem;
+  margin: auto;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+  top: 0;
+  background-color: rgb(0, 0, 0, 0.8);
+  margin-top: 2.7rem;
+  padding: 2rem 0;
+}
+
+.dropdown_content .dropdown_content_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_content a {
+  width: 20%;
+}
+
+.dropdown_content a img {
+  width: 12rem;
+}
+.header_menu_page:hover .dropdown_content {
+  display: block;
+}
+
+/* ------ Header Menu (desktop) End ------- */
+
+/* ------------------ Header Menu Start ------------------- */
+
+/*------------------- Header Banking Info Start -------------------*/
+
+/* -------  Mobile Start ------- */
+.header_banking_info{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_banking_info .header_banking_info_left{
+  display: flex;
+  align-items: flex-end;
+}
+.header_banking_info .header_balance{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.header_banking_info .header_balance_currency{
+  text-transform: uppercase;
+  margin-right: .25rem;
+}
+
+.header_banking_info .header_balance_icon {
+  padding-bottom:.35rem
+}
+
+
+.header_banking_info .header_balance_icon svg{
+  margin-left:.5rem
+}
+
+.header_banking_info .header_bankinginfo_actionbtn{
+  display: flex;
+}
+
+.header_banking_info .header_bankinginfo_actionbtn button:first-of-type{
+  margin-left: .5rem;
+}
+
+.header_banking_info .btn_restore,
+.header_banking_info .btn_gamewallet{
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5rem;
+  padding: 0.35rem 0;
+  margin-left: 0.25rem;
+  border-radius: 0.25rem;
+  white-space: nowrap; */
+  display: unset;
+  flex-direction: unset;
+  align-items: unset;
+  width: 5rem;
+  padding: 0.35rem 0;
+  margin-left: 0.25rem;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+}
+
+.header_banking_info .btn_restore img,
+.header_banking_info .btn_gamewallet img{
+  width: 3.5rem;
+}
+/* -------  Mobile End ------- */
+
+/* -------  Desktop End ------- */
+.header_topbar_wrap .header_banking_info{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0 0.25rem 0;
+}
+
+.header_topbar_wrap .header_banking_info .header_balance{
+  display: flex;
+  align-items: center;
+  flex-direction:unset;
+}
+
+.header_topbar_wrap .header_banking_info .header_balance_currency{
+  text-transform: uppercase;
+  margin-right: .25rem;
+}
+
+.header_topbar_wrap .header_banking_info .header_balance_icon svg{
+  margin-left:.5rem
+}
+
+.header_topbar_wrap .header_banking_info .btn_restore,
+.header_topbar_wrap .header_banking_info .btn_gamewallet{
+  display: unset;
+  flex-direction: unset;
+  align-items: unset;
+  width: 5rem;
+  padding: 0.35rem 0;
+  margin-left: 0.25rem;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+}
+
+.header_topbar_wrap .header_banking_info .header_bankinginfo_actionbtn button:first-of-type{
+  margin-left: .5rem;
+}
+
+.header_topbar_wrap .header_banking_menu{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header_banking_menu_list{
+  display: flex;
+  align-items: center;
+}
+
+.header_point_token{
+  display: flex;
+  align-items: center;
+}
+
+.header_point_token .header_point img,
+.header_point_token .header_token img{
+  width: 1.5rem;
+  margin-right: .25rem;
+}
+
+.header_topbar_wrap .header_noti {
+  position: absolute;
+  right: -2.5rem;
+  display: flex;
+}
+
+.header_topbar_wrap .header_noti img {
+  width: 1.5rem;
+}
+
+.header_topbar_wrap .header_noti svg {
+  position: absolute;
+  color: red;
+  right: -0.5rem;
+  top: -0.5rem;
+}
+/* -------  Desktop End ------- */
+
+/* ------ Header Banking Info End ------- */
+
+/* ------------ Contact Us Start ------------*/
+.contact_wrap_d {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 25%;
+  display: flex;
+  overflow: hidden;
+}
+
+.contact_front_d {
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00a4ff, #2e3192);
+  color: #fff;
+  cursor: pointer;
+}
+.contact_front_d .contact_front_d_header{
+  display: flex;
+  align-items: center;
+}
+
+.contact_front_d .card-body {
+  padding: 0.65rem 0.5rem 1.5rem;
+  min-height: 12rem;
+}
+
+.contact_front_d img {
+  filter: brightness(0) invert(1);
+  width: 2.5rem;
+  padding: 0 0 0.25rem 0;
+  margin-bottom:.8rem
+}
+
+.contact_back_d {
+  display: none;
+}
+
+.contact_back_d.card{
+  background: transparent;
+  border: 0 !important;
+  width: 15rem;
+}
+
+.contact_back_d .card-header{
+  border :1px solid #fff;
+  padding: 1rem;
+}
+
+.contact_back_d .list-group-item{
+  display: flex;
+  align-items: center;
+}
+.contact_back_d .list-group-item img{
+  width: 3rem;
+  margin-right: 1rem;
+}
+/* ContactUs Action */
+
+.contact_wrap_d:hover .contact_front_d {
+  opacity: 0;
+}
+
+.contact_wrap_d:hover .contact_back_d {
+  display: block;
+  animation: fadeInRight 0.5s ease-in-out;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    right: -200px;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+/* ------------ Contact Us End ------------*/
+
+/* ------------------- Header End --------------------- */

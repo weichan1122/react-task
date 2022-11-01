@@ -1,0 +1,410 @@
+/* ------------------- Home Start --------------------- */
+.mobileimg{
+  margin: auto;
+  display: flex;
+}
+.home_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: end;
+}
+
+.home_title{
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.home_title img{
+  width: 2.5rem;
+  margin-right: .5rem;
+}
+
+.home_view{
+  margin-left:.25rem;
+  margin-right:.25rem;
+}
+
+/* ------ Speaker Announcement Start ------- */
+
+.annbar_container{
+  display: flex;
+  align-items:center;
+}
+
+.annbar_container img {
+  width: 1.75rem;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/* ------ Speaker Announcement End ------- */
+
+/* ------ Home Game (Slot/Casino) Start ------- */
+#homegame.section{
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+}
+/* ---- Home Game (Desktop) Start ----- */
+
+/* .homegame_slot,
+.homegame_casino{
+  position: relative;
+}
+
+.homegame_view{
+  position: absolute;
+  right: 0;
+  top: 2.5rem;
+  margin-right: .25rem;
+  margin-left: .25rem;
+}
+
+.homegame_slot img,
+.homegame_casino img{
+  display: flex;
+  margin:auto;
+}
+
+.homegame_slot img{
+  margin-top:3rem;
+  margin-bottom: 3rem;
+} */
+
+/* ---- Home Game (Desktop) End ----- */
+
+/* ---- Home Game (Mobile) Start ----- */
+
+
+
+/* .home_game_m {
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  border-bottom:0
+}
+
+.home_game_m .nav-link{
+  border-radius: 1rem;
+  margin: 1rem 1rem 0 0;
+  padding: 1rem 0.5rem;
+  background-color: #2e3192;
+  filter: grayscale(0.5);
+  opacity: .4;
+  text-transform: uppercase;
+}
+
+.home_game_m .nav-link.active,
+.home_game_m .show>.nav-link {
+  background-color: #2e3192;
+  filter: grayscale(0);
+  opacity: 1;
+  border-width:1px;
+  border-style: solid;
+  border-color: var(--bs-nav-tabs-link-active-border-color);
+} */
+
+/* ---- Home Game (Mobile) End ----- */
+
+/* ------ Home Game (Slot/Casino) End ------- */
+
+/* ------ Home Promotion Start ------- */
+
+#homepromo.section{
+  margin-top:3rem;
+  margin-bottom: 3rem;
+}
+
+/* ------ Home Promotion End ------- */
+
+/* ------ Ranking List (Desktop/Mobile) Start ------- */
+
+
+#rankinglist.section{
+  margin-top:3rem;
+  margin-bottom: 3rem;
+}
+
+
+
+/* ---- Ranking List (Mobile) Start ----- */
+
+.rankinglist_table .nav-item button{
+ color:#fff;
+}
+
+.ranking_table_body{
+  padding-top: .5rem;
+  padding-right: 1.5rem;
+  padding-bottom: .5rem;
+  padding-left: 1.5rem;
+}
+
+.ranking_table_body .ranking_table_row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+}
+
+.ranking_table_body .ranking_table_row .ranking_user img{
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  width: 4rem;
+}
+
+.ranking_table_body .ranking_table_row .ranking_username_col .ranking_won{
+  color: #f1931e;
+  text-transform: capitalize;
+}
+
+
+/* ---- Ranking List (Mobile) End ----- */
+
+
+/* ---- Ranking List (Desktop) Start ----- */
+
+.ranking_table_container{
+  display: flex;
+  width: 100%;
+}
+
+.ranking_table_container .ranking_table{
+  width: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fff;
+  /* box-shadow: 0px 0px 8px 3px rgb(0 164 255 / 88%),inset 0px 0px 8px 3px rgb(0 164 255 / 88%); */
+}
+
+.ranking_table_container .ranking_table_header{
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: radial-gradient(var(--color-button),var(--color-primary));
+  border-bottom: 1px solid #fff;
+}
+
+.ranking_table_container .ranking_table_body{
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.ranking_table_container .ranking_table_body .ranking_table_row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+}
+
+.ranking_table_container .ranking_table_body .ranking_table_row .ranking_user img{
+  padding-top: 0.75rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.5rem;
+    width: 4rem;
+}
+
+.ranking_table_container .ranking_table_body .ranking_table_row .ranking_username_col .ranking_won{
+  color: #f1931e;
+  text-transform: capitalize;
+}
+
+/* .ranking_table_container .table.ranking_table thead::after{
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  width: 65%;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%,0);
+} */
+/* .ranking_table_container table.ranking_table th,table.ranking_table tbody tr:first-child td{
+  padding-top: 1.5rem;
+}
+.ranking_table_container table.ranking_table tbody tr:last-child td{
+  padding-bottom: 1.5rem;
+} */
+
+/* .ranking_list .nav-link{
+  color: #fff;
+} */
+
+
+/* .ranking_table_container table.ranking_table tbody tr td:nth-child(1){
+  text-align: end;
+}
+
+.ranking_table_container table.ranking_table tbody tr td:nth-child(2),
+.ranking_table_container table.ranking_table tbody tr td:nth-child(3){
+  text-align: start;
+} */
+
+
+/* ---- Ranking List (Desktop) End ----- */
+
+/* ------ Ranking List (Desktop/Mobile) End ------- */
+
+
+
+/* ------------------- Home End --------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.swiper {
+  width: 100%;
+  height: 100%;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}  */
+.option_title{
+  font-size: 1.5rem;
+  margin: 1rem auto;
+}
+/* @media screen and (min-width: 320px) {
+  .mySwiper {
+    width: 320px;
+  }
+}
+ @media screen and (min-width: 640px) {
+  .mySwiper {
+    width: 640px;
+  }
+} 
+
+@media screen and (min-width: 768px) {
+  .mySwiper {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .mySwiper {
+    width: 1000px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .mySwiper {
+    width: 1320px;
+  }
+} */
+
+
+/* Boostrap Card Css */
+.card-body{
+  border-top: 1px solid var(--bs-border-color-translucent);
+}
+
+.card{
+  border: var(--bs-card-border-width) solid #999 !important;
+}
+
+.horizontal_card {
+  display: flex;
+  flex-direction: unset !important;
+}
+.horizontal_card .card-img-top{
+  width: 60% !important;
+}
+
+.horizontal_card .card-body{
+ margin: auto;
+ border-top: 0;
+}
+
+/* Home Page */
+
+.home-bg {
+  background-image: url(https://macal8.com/assets/img/bg-home.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  color: #fff;
+}
+/* .home-bg a{
+  color: #fff;
+} */
+
+
+
+/* Promo Part */
+
+.PromoSwiper{
+    padding:0 0.25rem 1.5rem;
+}
+.PromoSwiper .swiper-horizontal>.swiper-pagination-bullets, .PromoSwiper .swiper-pagination-bullets.swiper-pagination-horizontal, .PromoSwiper .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0px;
+}
+
+.swiper-pagination-bullet{
+  background: #fff;
+}
+
+/* Ranking List */
+/* .ranking_list.nav-tabs{
+    border-bottom: 1px solid #999;
+    
+}
+
+.ranking_list.nav-tabs .nav-item.show .nav-link, .ranking_list.nav-tabs .nav-link.active{
+    border-color: #999;
+} */
+
+/* Ranking Table */
+
+/* 
+table.ranking_table tr{
+  height: 50px;
+} */
+
+
+
+
+
+

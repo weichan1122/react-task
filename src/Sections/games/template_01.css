@@ -1,0 +1,37 @@
+
+  
+  .home_game_selection .nav-item .nav-link{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .home_game_wrap{
+    display: flex;
+  }
+  
+  .home_game_selection{
+    flex-direction: column;
+  }
+  .homegame_slot_wrap,
+  .homegame_casino_wrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .homegame_slot_wrap a,
+  .homegame_casino_wrap a{
+    width: 30%;
+  }
+  
+  /* Mobile to Desktop */
+  @media (min-width: 992px){
+    
+    .homegame_slot_wrap a,
+    .homegame_casino_wrap a{
+      width: 20%;
+    }
+    
+  }
+  
+  

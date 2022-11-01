@@ -1,0 +1,141 @@
+/* ------------------- Footer Start --------------------- */
+#footer.section{
+    margin-top:auto;
+}
+
+footer#footer .footer_row:not(:last-child){
+    border-bottom: 1px dashed #fff;
+} 
+
+footer#footer .footer_row{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ---- ------- Footer Row 1 (provider) ---- ------- */
+
+.footer_row .footer_info{
+    text-align: center;
+    width: 33.3%;
+}
+
+.footer_row .footer_info .footer_title{
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: .25rem;
+}
+
+.footer_row .footer_info .footer_info_img{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;;
+}
+
+.footer_row .footer_info .footer_info_img li{
+    margin-right: .25rem;
+}
+
+.footer_row .footer_info .footer_info_img li img{
+    height: 2rem;
+}
+
+/* ---- ------- Footer Row 2 (help & copyright) ---- ------- */
+
+.footer_row .footer_copyright_box{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_row  .footer_help{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+.footer_help a{
+    border-bottom: 1px solid #fff;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.footer_row .footer_copyright_box .footer_copyright{
+    padding-top: 0.5rem;
+}
+
+/* Mobile to Desktop */
+@media (min-width: 992px){
+  
+    .footer_row .footer_copyright_box{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction:unset;
+        align-items:center;
+    }
+
+    .footer_row  .footer_help{
+        display: unset;
+        flex-direction: unset;
+        width: unset;
+    }
+
+    .footer_help a{
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+        border-bottom:none;
+        border-right: 1px solid #fff;
+        padding-right: 0.5rem;
+        padding-top:0;
+        padding-bottom:0;
+    }
+
+    .footer_row .footer_copyright_box .footer_copyright{
+        padding-top: 0;
+    }
+        
+}
+/* ------------------- Footer End --------------------- */
+
+/* ---- ------- Footer SEO Start ---- ------- */
+.seo_footer_content span{
+    color:red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer_seo_all {
+    display: flex;
+}
+
+.footer_seo_all_col {
+    width: 50%;
+    padding: 10px;
+    border-right: 1px solid #777;
+}
+
+.footer_seo_all_col:first-child {
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+.footer_seo_all_col >.footer_seo__title {
+    color: #00a4ff;
+    font-size: 1.1rem;
+    padding-bottom: 0.25rem;
+}
+
+.footer_seo__title {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.footer_seo__title:first-child {
+    padding-top: 0;
+}
+/* ---- ------- Footer SEO End ---- ------- */
+

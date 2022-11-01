@@ -1,0 +1,14 @@
+/* ----------- -Include Content- ----------- */
+
+/* flex row */
+.flex-row .card-img-top {
+    width: 50%;
+}
+
+@media (min-width: 576px){
+.card-group>.card:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: .5rem;
+}
+}
